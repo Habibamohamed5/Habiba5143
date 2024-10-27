@@ -1,0 +1,48 @@
+body {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    background-color: #ffffff;
+}
+
+#game {
+    margin-top: 50px;
+}
+
+.word-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.word-container img {
+    width: 100px;
+    height: 100px;
+}
+
+.word, .opposite {
+    font-size: 1.5em;
+    cursor: pointer;
+    margin: 10px;
+    color: #333;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.word:hover, .opposite:hover {
+    color: #4CAF50;
+    background-color: #f1f1f1;
+}
+
+.selected {
+    border: 2px solid #4CAF50;
+}
+
+.correct {
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+}
+
+.incorrect {
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}

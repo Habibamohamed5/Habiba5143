@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Fun Word chosic Game</title>
+</head>
+<body>
+    <h1 id="title">Fun Word chosic Game...</h1>
+    <div id="game" class="container">
+        <div id="image-container">
+            <img id="image" src="" alt="Image to spell">
+        </div>
+        <div id="choices-container" class="d-flex justify-content-around">
+            <button class="choice btn btn-primary" onclick="selectChoice(this)"></button>
+            <button class="choice btn btn-primary" onclick="selectChoice(this)"></button>
+            <button class="choice btn btn-primary" onclick="selectChoice(this)"></button>
+        </div>
+        <p id="result"></p>
+        <p id="score">Score: 0</p>
+        <div id="progress-container">
+            <div id="progress-bar"></div>
+        </div>
+        <button class="btn btn-success mt-3" onclick="checkAnswer()">Check Answer</button>
+    </div>
+
+    <div id="congratsModal" onclick="closeCongrats()">
+        <div id="congratsContent">
+            🎉 Congratulations! You've won! 🎉
+            <p>Click anywhere to continue</p>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
